@@ -58,6 +58,13 @@ const SignUp = () => {
             Sign Up
           </button>
         </form>
+        <button 
+          onClick={() => window.location.href = '/login'} 
+          className="auth-button" 
+          style={{ marginTop: '10px' }}
+        >
+          Already have an account? Log In
+        </button>
       </div>
     </div>
   );
