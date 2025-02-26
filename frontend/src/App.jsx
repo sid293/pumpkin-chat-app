@@ -8,6 +8,7 @@ import './components/Auth.css'
 function App() {
   const hasUserData = sessionStorage.getItem('userData') !== null
 
+  //routes
   return (
     <BrowserRouter>
       <Routes>
