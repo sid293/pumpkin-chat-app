@@ -16,7 +16,7 @@ const server = http.createServer(app);
 
 const io = socketIO(server, {
   cors: {
-    origin: "http://localhost:5173", // Vite's default port
+    origin: ["http://localhost:5173", "https://pumpkin-chat-app.vercel.app/"],
     methods: ["GET", "POST"]
   }
 });
