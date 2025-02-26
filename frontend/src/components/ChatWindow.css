@@ -1,0 +1,147 @@
+.chat-window {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f2f5;
+  transition: width 0.3s ease;
+}
+
+.chat-window.user-info-open {
+  width: calc(100% - 300px);
+}
+
+.chat-header {
+  padding: 10px 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+}
+
+.chat-contact {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chat-window {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f2f5;
+  transition: width 0.3s ease;
+}
+
+.chat-window.user-info-open {
+  width: calc(100% - 300px);
+}
+
+.contact-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-weight: bold;
+  color: #666;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.contact-status {
+  font-size: 13px;
+  color: #666;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 65%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-sent {
+  align-self: flex-end;
+}
+
+.message-received {
+  align-self: flex-start;
+}
+
+.message-content {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message-sent .message-content {
+  background-color: #dcf8c6;
+  color: #303030;
+}
+
+.message-received .message-content {
+  background-color: #fff;
+  color: #303030;
+}
+
+.message-time {
+  font-size: 11px;
+  color: #999;
+  margin-top: 2px;
+  align-self: flex-end;
+}
+
+.message-input-container {
+  padding: 10px 16px;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 15px;
+  outline: none;
+}
+
+.send-button {
+  padding: 8px 16px;
+  background-color: #128c7e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.send-button:hover {
+  background-color: #075e54;
+}

@@ -1,0 +1,91 @@
+.user-info-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.user-info-overlay.visible {
+  width: 30%;
+}
+
+.user-info-modal {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.user-info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  color: #666;
+  font-size: 3.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details {
+  text-align: center;
+}
+
+.user-details h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.user-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.user-phone {
+  font-size: 14px;
+}
+
+.user-email {
+  font-size: 14px;
+}
