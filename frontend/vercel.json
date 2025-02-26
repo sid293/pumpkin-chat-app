@@ -1,24 +1,8 @@
 {
-  "routes": [
-    {
-      "src": "/login",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/signup",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/chat",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
 }
